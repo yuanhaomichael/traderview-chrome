@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style/popup-mavis.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popup-mavis.js"></script>
+  </head>
+  <body>
+    <div id="set-up-view">
+        <img id="logo1" src="images/logo.png" width="55" 
+    height="40" alt="logo">
+        <h2 id="app-title" style="display: inline-block; margin-bottom: 0rem;">TraderView</h2>
+        <hr/>
+        <h1 style="margin-bottom: 0.3rem; margin-top: 0; padding: 0rem; font-weight: lighter; color: #6687FC;">Set up your porfolio</h1>
+
+        <div id="blue-container" style="background-color:rgba(108, 173, 250, 0.15); border: 2px solid #1C4DFB; border-radius: 10px; padding-top: -2rem; padding-bottom: 10px;">
+            <div id="porfolio-connect">
+                <div class="wrap">
+                    <div class="search" style="margin-top: -8rem;">
+                        <input type="text" class="searchTerm" placeholder="Search">
+                        <button type="submit" class="searchButton" style="border-radius: 0 20px 20px 0;">
+                            <img src="images/search-icon.png" style="width: 23px; height: 23px;">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="portfolios" style="margin-top: -7rem;">
+                <img src="images/Robinhood.png" alt="">
+                <img src="images/Webull.png" alt="">
+                <img src="images/Fidelity.png" alt=""> <br>
+                <img src="images/Interactive Brokers.png" alt="">
+                <img src="images/Etrade.png" alt="">
+                <img src="images/Td ameritrade.png" alt="">
+            </div>
+            <div id="import-watchlist" style="align-items: left;">
+                <input type="checkbox" id="import-stocks" name="import-stocks" value="import">
+                <label for="import-stocks" style="font-size: 16px; color: #6687FC; margin-bottom: 1rem;">Click to import portfolio to Watchlist</label><br>
+            </div>
+        </div>
+        <p style="margin: 0.3rem 0;text-align: left; font-size: 16px; color: #6687FC;">By pressing Finish, I agree to use two factor authentication upon login for security reasons and will be redirected to login in each selected brokerage.
+            Any data stored is encrypted.</p>
+        <div style="display:flex; justify-content: right; padding-bottom: 3rem;">
+            <button id="finish-button" class="blue-button"> Finish</button>
+        </div>
+
+    </div>
+    <div id="authentication-view" class="hidden">
+        <img id="logo1" src="images/logo.png" width="55" 
+    height="40" alt="logo">
+        <h2 id="app-title" style="display: inline-block; margin-bottom: 0rem;">TraderView</h2>
+        <hr/>
+    </div>
+    
+  </body>
+</html>
