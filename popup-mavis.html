@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="style/popup-mavis.css">
+    <script src="js/jquery.min.js"></script>
     <script src="js/popup-mavis.js"></script>
   </head>
   <body>
@@ -12,7 +13,7 @@
         <hr/>
         <h1 style="margin-bottom: 0.3rem; margin-top: 0; padding: 0rem; font-weight: lighter; color: #6687FC;">Set up Your Porfolio</h1>
 
-        <div id="blue-container" style="background-color:rgba(108, 173, 250, 0.15); border: 2px solid #1C4DFB; border-radius: 10px; padding-top: -2rem;">
+        <div id="blue-container" style="background-color:rgba(108, 173, 250, 0.15); border: 2px solid #1C4DFB; border-radius: 10px; padding-top: -2rem; padding-bottom: 10px;">
             <div id="porfolio-connect">
                 <div class="wrap">
                     <div class="search" style="margin-top: -8rem; ">
@@ -33,10 +34,10 @@
             </div>
             <div id="import-watchlist" style="align-items: left;">
                 <input type="checkbox" id="import-stocks" name="import-stocks" value="import">
-                <label for="import-stocks" style="font-size: 16px;">Click to import portfolio to Watchlist</label><br>
+                <label for="import-stocks" style="font-size: 16px; color: #6687FC; margin-bottom: 1rem;">Click to import portfolio to Watchlist</label><br>
             </div>
         </div>
-        <p style="margin: 0.3rem 0;text-align: left; font-size: 16px;">By pressing Finish, I agree to use two factor authentication upon login for security reasons and will be redirected to login in each selected brokerage.
+        <p style="margin: 0.3rem 0;text-align: left; font-size: 16px; color: #6687FC;">By pressing Finish, I agree to use two factor authentication upon login for security reasons and will be redirected to login in each selected brokerage.
             Any data stored is encrypted.</p>
         <div style="display:flex; justify-content: right;">
             <button id="finish-button" class="blue-button"> Finish</button>

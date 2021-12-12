@@ -42,7 +42,7 @@ body {
 
 .searchTerm {
     width: 100%;
-    border: 3px solid #00B4CC;
+    border: 3px solid #6687FC;;
     border-right: none;
     padding: 5px;
     height: 20px;
@@ -60,8 +60,8 @@ body {
     height: 36px;
     margin-top: -0.5px;
     margin-left: -5px;
-    border: 1px solid #00B4CC;
-    background: #00B4CC;
+    border: 1px solid #6687FC;;
+    background: #6687FC;;
     text-align: center;
     color: #fff;
     border-radius: 0 5px 5px 0;
