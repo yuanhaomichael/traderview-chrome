@@ -1,0 +1,18 @@
+body {
+    font-family: "Raleway", "avenir";
+    font-weight: 100;
+    padding: .5rem;
+    text-align: center;
+    width: 600px;
+    height: 500px;
+    background-color: #F5F8FF;
+    border: 2px solid #1C4DFB;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+  
+#authentication-view {
+    background-color: #F5F8FF;
+    border: 2px solid #1C4DFB;
+    border-radius: 15px;
+}
