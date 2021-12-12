@@ -2,6 +2,9 @@
 <html>
   <head>
     <link rel="stylesheet" href="alert.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="alert.js"></script>
+    
   </head>
   <body>
     <img id="home" src="images/home.png" width="40" 
@@ -35,15 +38,15 @@
         <p style="color: red; font-weight: bold;">! 2 new alerts</p>
         <hr/>
 
-        <div id="alert" style="padding-left: 2rem; padding-right: 2rem">
-            <img id="home" src="images/tesla.png" width="15" 
+        <div id="alert-tesla" style="padding-left: 2rem; padding-right: 2rem">
+            <img id="tesla" src="images/tesla.png" width="15" 
             height="15" alt="bell" style="display: inline-block; margin-right: 1rem;">
             <p style="font-weight: bold; display: inline; margin-right: 1rem;">TSLA</p>
             <p style="display: inline-block;">  Tesla went up by 10% over the last 24 hours</p>
         </div>
 
-        <div id="alert" style="padding-left: 2rem; padding-right: 2rem">
-            <img id="home" src="images/apple.png" width="15" 
+        <div id="alert-apple" style="padding-left: 2rem; padding-right: 2rem">
+            <img id="apple" src="images/apple.png" width="15" 
             height="15" alt="bell" style="display: inline-block; margin-right: 1rem;">
             <p style="font-weight: bold; display: inline; margin-right: 1rem;">APPL</p>
             <p style="display: inline-block;">  Apple stock volume went down by 5.6M</p>
@@ -52,22 +55,24 @@
         <p style=" font-weight: bold;">Older alerts</p>
         <hr/>
 
-        <div id="alert" style="padding-left: 2rem; padding-right: 2rem">
-            <img id="home" src="images/google.png" width="15" 
+        <div id="alert-alphabet" style="padding-left: 2rem; padding-right: 2rem">
+            <img id="alphabet" src="images/google.png" width="15" 
             height="15" alt="bell" style="display: inline-block; margin-right: 1rem;">
             <p style="font-weight: bold; display: inline; margin-right: 1rem;">GOOGL</p>
             <p style="display: inline-block;">  Alphabet reached $2,950 over the last 5 hours</p>
         </div>
 
-        <div id="alert" style="padding-left: 2rem; padding-right: 2rem">
-            <img id="home" src="images/walmart.png" width="15" 
+        <div id="alert-walmart" style="padding-left: 2rem; padding-right: 2rem">
+            <img id="walmart" src="images/walmart.png" width="15" 
             height="15" alt="bell" style="display: inline-block; margin-right: 1rem;">
             <p style="font-weight: bold; display: inline; margin-right: 1rem;">WMT</p>
             <p style="display: inline-block;">  Walmart experienced a 1.25% decrease</p>
-        </div>
-
-        
+        </div>     
+      </div>
     </div>
-</div>
+
+
+    <div id="alerts-page" class="hidden"></div>
   </body>
+
 </html>
