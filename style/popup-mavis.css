@@ -103,7 +103,13 @@ body {
 
 .card-header {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 60% 40%;
+    padding: 5px 5px;
+}
+
+.portfolio-stat-header {
+    display: grid;
+    grid-template-columns: 10% 25% 25% 40%;
     padding: 0 5px;
 }
 
@@ -116,8 +122,9 @@ body {
 
 .header-item-middle {
     /* text-align: center; */
-    display: flex;
-    justify-content: space-around;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header-item-right {
@@ -162,4 +169,15 @@ body {
     text-decoration: underline;
     margin-left: 5px;
     font-weight: lighter;
+}
+
+.item-title {
+    font-size: 16px;
+    margin: 0;
+}
+
+.item-stats {
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 0;
 }

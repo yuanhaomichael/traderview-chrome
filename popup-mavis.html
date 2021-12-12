@@ -45,7 +45,7 @@
             <div class="header-item-left" >
                 <img id="alert" src="images/alert.png" width="30" 
                 height="30" alt="logo">
-                <img id="moon" style="margin-left: 15px" src="images/not-sleep.png" width="30" 
+                <img id="moon" style="margin-left: 25px" src="images/not-sleep.png" width="30" 
                 height="30" alt="logo">
             </div>
             <div class="header-item">
@@ -73,10 +73,10 @@
             <div class="header-item-left" >
                 <img id="alert" src="images/alert.png" width="30" 
                 height="30" alt="logo">
-                <img id="moon" style="margin-left: 15px" src="images/not-sleep.png" width="30" 
+                <img id="moon" style="margin-left: 25px" src="images/not-sleep.png" width="30" 
                 height="30" alt="logo">
             </div>
-            <div class="header-item">
+            <div >
                 <img id="logo1" src="images/logo.png" width="55" 
                 height="40" alt="logo">
                 <h2 class="app-title" style="display: inline-block; margin-bottom: 0;">TraderView</h2>
@@ -87,7 +87,7 @@
             </div>
         </div>
         <hr style="margin: 0"/>
-        <div id="summaries" class="grey-border" style="margin: 5px 0;">
+        <div id="summaries" class="grey-border" style="margin: 10px 0;">
             <div class="card-header">
                 <div class="header-item-left">
                     <img id="summaries-icon" src="images/portfolio-summary.png" width="20" 
@@ -99,17 +99,58 @@
                     height="20" alt="logo">
                 </div>
             </div>
-            <div id="total-summary" >
-                <img src="images/total-summary-chart.png" width="">
-                <div id="summary-stats">
-                    <p>Today's Returns</p>
-                    <p>+$836.71 +5.87%</p>
-                    <p>Today's Gain/Loss</p>
-                    <p>+$50450.23 +2.23%</p>
+            <div id="total-summary" class="card-header" style="margin: 10px;">
+                <div class="header-item-middle">
+                    <img src="images/total-summary-chart.png" width="100%">
+                </div>
+                <div id="summary-stats" class="box">
+                    <p class="item-title">Today's Returns</p>
+                    <p class="item-stats" >+$836.71 <span style="color: #3EAF3F">+5.87%</span></p>
+                    <p></p>
+                    <p class="item-title">Total Gain/Loss</p>
+                    <p class="item-stats">+$50,450.23 <span style="color: #3EAF3F">+2.23%</span></p>
+                </div>
+            </div>
+            <div id="fidelity-total" class="portfolio-stat-header" style="margin: 10px;">
+                <div class="header-item-left">
+                    <img src="images/fidelity-icon.png" width="100%" >
+                </div>
+                <div class="box">
+                    <p class="item-title">Today's Returns</p>
+                    <p class="item-stats" >+$599.01 </p>
+                    <p class="item-stats" style="color: #3EAF3F">+3.28%</p>
+                </div>
+                <div class="box">
+                    <p class="item-title">Total Gain/Loss</p>
+                    <p class="item-stats" >+$46,212.09 </p>
+                    <p class="item-stats" style="color: #3EAF3F">+1.78%</p>
+                </div>
+                <div class="header-item-middle">
+                    <img src="images/fidelity-total-chart.png" width="100%"><br>
+                    <img src="images/show-more.png" width=90 style="float:right">
+                </div>
+            </div>
+            <div id="webull-total" class="portfolio-stat-header">
+                <div class="header-item-left">
+                    <img src="images/webull-icon.png" width="100%" style="margin: 10px;">
+                </div>
+                <div class="box">
+                    <p class="item-title">Today's Returns</p>
+                    <p class="item-stats" >-$314.15 </p>
+                    <p class="item-stats" style="color: #E14942">-0.59%</p>
+                </div>
+                <div class="box">
+                    <p class="item-title">Total Gain/Loss</p>
+                    <p class="item-stats" >+$4,238.14 </p>
+                    <p class="item-stats" style="color: #3EAF3F">+0.23%</p>
+                </div>
+                <div class="header-item-middle">
+                    <img src="images/webull-total-chart.png" width="95%" style="float: left"><br>
+                    <img src="images/show-more.png" width=90 style="float:right">
                 </div>
             </div>
         </div>
-        <div id="watchlist-collapse" class="card-header grey-border" style="margin: 5px 0;">
+        <div id="watchlist-collapse" class="card-header grey-border" style="margin: 10px 0;">
             <div class="header-item-left">
                 <img id="watchlist-icon" src="images/watchlist.png" width="20" 
                 height="20" alt="logo">
