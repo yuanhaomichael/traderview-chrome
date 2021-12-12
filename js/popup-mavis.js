@@ -5,4 +5,10 @@ $(document).ready(function () {
         $("#authentication-view").removeClass("hidden");
     })
 
+    $("#verify-button").click(function () {
+        $("#authentication-view").addClass("hidden");
+        $("#portfolio-view").removeClass("hidden");
+    })
+
+
 });
