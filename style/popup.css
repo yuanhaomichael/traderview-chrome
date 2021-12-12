@@ -7,10 +7,6 @@ body {
   height: 500px;
 }
 
-h1 {
-  padding: 1rem;
-  margin-top: -2 rem;
-}
 
 
 button {
@@ -26,3 +22,12 @@ button.current {
   box-shadow: 0 0 0 2px white,
               0 0 0 4px black;
 }
+
+#app-title {
+  display: inline-flex;
+  font-size:50px!important; 
+  color: #1C4DFB;
+  margin-top: -2.8rem;
+  font-weight: lighter;
+}
+
