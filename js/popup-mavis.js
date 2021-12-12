@@ -10,5 +10,10 @@ $(document).ready(function () {
         $("#portfolio-view").removeClass("hidden");
     })
 
+    $("#not-sleep-icon").click(function() {
+        $("#portfolio-view-sleep").removeClass("hidden");
+        $("#portfolio-view").addClass("hidden");
+    })
+
 
 });

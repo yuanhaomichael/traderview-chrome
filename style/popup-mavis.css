@@ -181,3 +181,23 @@ body {
     font-weight: bolder;
     margin: 0;
 }
+
+#dnd-options {
+    position: absolute;
+    margin-left: 50px;
+    z-index: 1;
+    border: 1.5px solid #1C4DFB;
+    border-radius: 10px;
+    background-color: #E8ECFD;
+    text-align: left;
+}
+
+#dnd-options > p {
+    color: #5F6368;
+    font-size: 14px;
+    margin: 5px;
+}
+
+#dnd-options > p> img {
+    margin: 0 5px;
+}
