@@ -1,13 +1,73 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="alert.css">
   </head>
   <body>
-    <img id="logo1" src="images/logo.png" width="100" 
+    <img id="home" src="images/home.png" width="40" 
+    height="40" alt="logo">
+    <img id="moon" style="margin-left: 1rem" src="images/sleep.png" width="40" 
+    height="40" alt="logo">
+    <img id="logo1" style="margin-left: 2rem" src="images/logo.png" width="100" 
     height="67" alt="logo">
-    <h2 id="app-title" style="display: inline-block; margin-bottom: 0rem;">TraderView</h2>
+    <h2 id="app-title" style="display: inline-block; margin-bottom: 0rem; margin-right: 2rem;">TraderView</h2>
+    <img id="moon" src="images/settings.png" width="40" 
+    height="40" alt="logo">
     <hr/>
 
+    <div id="alerts-dashboard" style="margin: .5rem; padding: .2rem; border:1px solid black; border-radius: .3rem;">
+    <div id="alerts-dash-title" style="text-align:left">
+        <img id="home" src="images/bell.png" width="30" 
+        height="30" alt="bell" style="margin-left:1rem">
+        <h1 style="display: inline-block; font-weight: lighter; color: #1C4DFB; margin-left: .5rem">Alerts Dashboard</h1>
+    </div>
+
+    <div class="wrap" style="margin-top: 3rem; ">
+        <div class="search" style="margin-top: -8rem;">
+            <input type="text" class="searchTerm" placeholder="Add Alert">
+            <button type="submit" class="searchButton" style="border-radius: 0 20px 20px 0;">
+                +
+            </button>
+        </div>
+    </div>
+
+    <div style="margin-top: 2rem; text-align: left; padding: 1rem">
+        <p style="color: red; font-weight: bold;">! 2 new alerts</p>
+        <hr/>
+
+        <div id="alert" style="padding-left: 2rem; padding-right: 2rem">
+            <img id="home" src="images/tesla.png" width="15" 
+            height="15" alt="bell" style="display: inline-block; margin-right: 1rem;">
+            <p style="font-weight: bold; display: inline; margin-right: 1rem;">TSLA</p>
+            <p style="display: inline-block;">  Tesla went up by 10% over the last 24 hours</p>
+        </div>
+
+        <div id="alert" style="padding-left: 2rem; padding-right: 2rem">
+            <img id="home" src="images/apple.png" width="15" 
+            height="15" alt="bell" style="display: inline-block; margin-right: 1rem;">
+            <p style="font-weight: bold; display: inline; margin-right: 1rem;">APPL</p>
+            <p style="display: inline-block;">  Apple stock volume went down by 5.6M</p>
+        </div>
+
+        <p style=" font-weight: bold;">Older alerts</p>
+        <hr/>
+
+        <div id="alert" style="padding-left: 2rem; padding-right: 2rem">
+            <img id="home" src="images/google.png" width="15" 
+            height="15" alt="bell" style="display: inline-block; margin-right: 1rem;">
+            <p style="font-weight: bold; display: inline; margin-right: 1rem;">GOOGL</p>
+            <p style="display: inline-block;">  Alphabet reached $2,950 over the last 5 hours</p>
+        </div>
+
+        <div id="alert" style="padding-left: 2rem; padding-right: 2rem">
+            <img id="home" src="images/walmart.png" width="15" 
+            height="15" alt="bell" style="display: inline-block; margin-right: 1rem;">
+            <p style="font-weight: bold; display: inline; margin-right: 1rem;">WMT</p>
+            <p style="display: inline-block;">  Walmart experienced a 1.25% decrease</p>
+        </div>
+
+        
+    </div>
+</div>
   </body>
 </html>
