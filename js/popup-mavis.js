@@ -20,5 +20,10 @@ $(document).ready(function () {
         $("#watchlist-view").removeClass("hidden");
     })
 
+    $("#watchlist-alert").click(function() {
+        $("#watchlist-view").addClass("hidden");
+        // unhide whichever component you need
+    })
+
 
 });
