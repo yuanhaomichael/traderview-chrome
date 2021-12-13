@@ -113,6 +113,23 @@ body {
     padding: 0 5px;
 }
 
+#watchlist-headings {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 40%;
+    padding: 0 5px;
+}
+
+#watchlist-headings > span {
+    color: #6687FC;
+    font-size: 16px;
+}
+
+#watchlist-row {
+    display: grid;
+    grid-template-columns: 30% 25% 25% 10% 10%;
+    padding: 0 5px;
+}
+
 .header-item-left {
     /* text-align: center; */
     display: flex;
@@ -165,9 +182,8 @@ body {
 .card-title {
     color: #1C4DFB;
     display: inline-block; 
-    margin: 0;
     text-decoration: underline;
-    margin-left: 5px;
+    margin: 0 10px;
     font-weight: lighter;
 }
 
