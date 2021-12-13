@@ -22,8 +22,33 @@ $(document).ready(function () {
 
     $("#watchlist-alert").click(function() {
         $("#watchlist-view").addClass("hidden");
+        $("#portfolio-view").addClass("hidden");
         // unhide whichever component you need
+        $("#alerts-dashboard").removeClass("hidden")
     })
 
+    $("#alert-tesla").click(function () {
+        console.log("hi")
+        $("#all-alerts").addClass("hidden");
+        $("#alerts-page-tesla").removeClass("hidden");
+    })
+
+    $("#alert-apple").click(function () {
+        console.log("hi")
+        $("#all-alerts").addClass("hidden");
+        $("#alerts-page-apple").removeClass("hidden");
+    })
+
+    $("#alert-alphabet").click(function () {
+        console.log("hi")
+        $("#all-alerts").addClass("hidden");
+        $("#alerts-page-alphabet").removeClass("hidden");
+    })
+
+    $("#alert-walmart").click(function () {
+        console.log("hi")
+        $("#all-alerts").addClass("hidden");
+        $("#alerts-page-walmart").removeClass("hidden");
+    })
 
 });

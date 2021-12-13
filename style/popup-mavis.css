@@ -240,3 +240,69 @@ body {
 #dnd-options > p> img {
     margin: 0 5px;
 }
+
+.search1 {
+    width: 100%;
+    position: relative;
+    display: flex;
+    border-radius: 1rem;
+  
+  }
+  
+  .searchTerm1 {
+    width: 100%;
+    border: 3px solid #6687FC;;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm1:focus{
+    color: #00B4CC;
+  }
+  
+  .searchButton1 {
+    width: 40px;
+    height: 36px;
+    margin-top: -0.5px;
+    margin-left: -5px;
+    border: 1px solid #6687FC;;
+    background: #6687FC;;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap1{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } 
+  
+  .hidden {
+    display: none;
+  }
+  
+  option {
+    color: #6687FC;
+  }
+  
+  #alert-sample form {
+    display: inline-flex;
+  }
+  
+  #alert-sample input{
+    width: 30px;
+  }
+
+  .hidden-main{
+      display: none;
+  }

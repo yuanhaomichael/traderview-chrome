@@ -6,6 +6,9 @@
     <script src="js/popup-mavis.js"></script>
   </head>
   <body>
+
+
+    <!-- onboarding screen -->
     <div id="set-up-view">
         <img id="logo1" src="images/logo.png" width="55" 
     height="40" alt="logo">
@@ -40,6 +43,8 @@
         </div>
 
     </div>
+
+    <!-- authenticaton view -->
     <div id="authentication-view" class="hidden">
         <div class="header">
             <div class="header-item-left" >
@@ -68,6 +73,8 @@
         </div>
         
     </div>
+
+    <!-- porfolio view -->
     <div id="portfolio-view" class="hidden">
         <div class="header">
             <div class="header-item-left" >
@@ -264,6 +271,8 @@
         </div>
     </div>
 
+
+    <!-- watchlist view -->
     <div id="watchlist-view" class="hidden">
         <div class="header">
             <div class="header-item-left" >
@@ -444,6 +453,261 @@
         </div>
         
     </div>
+
+
+
+
+    <!-- alerts section: alerts-dashboard + alerts pages for Tesla, Apple, Google, Walmart -->
+
+    <div id="alerts-dashboard" class="hidden" style="margin: .5rem; padding: .2rem; border:1px solid black; border-radius: .3rem; min-height: 400px;">
+        <div id="alerts-dash-title" style="text-align:left">
+            <img id="home" src="images/bell.png" width="30" 
+            height="30" alt="bell" style="margin-left:1rem">
+            <h1 style="display: inline-block; font-weight: lighter; color: #1C4DFB; margin-left: .5rem">Alerts Dashboard</h1>
+        </div>
+    
+        <div class="wrap1" style="margin-top: 3rem; ">
+            <div class="search1" style="margin-top: -8rem;">
+                <input type="text" class="searchTerm1" placeholder="Add Alert">
+                <button type="submit" class="searchButton1" style="border-radius: 0 20px 20px 0;">
+                    +
+                </button>
+            </div>
+        </div>
+    
+        <div id="all-alerts">
+        <div style="margin-top: 2rem; text-align: left; padding: 1rem">
+            <p style="color: red; font-weight: bold;">! 2 new alerts</p>
+            <hr/>
+    
+            <div id="alert-tesla" style="padding-left: 2rem; padding-right: 2rem">
+                <img id="tesla" src="images/tesla.png" width="15" 
+                height="15" alt="bell" style="display: inline-block; margin-right: 1rem;">
+                <p style="font-weight: bold; display: inline; margin-right: 1rem;">TSLA</p>
+                <p style="display: inline-block;">  Tesla went up by 10% over the last 24 hours</p>
+            </div>
+    
+            <div id="alert-apple" style="padding-left: 2rem; padding-right: 2rem">
+                <img id="apple" src="images/apple.png" width="15" 
+                height="15" alt="bell" style="display: inline-block; margin-right: 1rem;">
+                <p style="font-weight: bold; display: inline; margin-right: 1rem;">APPL</p>
+                <p style="display: inline-block;">  Apple stock volume went down by 5.6M</p>
+            </div>
+    
+            <p style=" font-weight: bold;">Older alerts</p>
+            <hr/>
+    
+            <div id="alert-alphabet" style="padding-left: 2rem; padding-right: 2rem">
+                <img id="alphabet" src="images/google.png" width="15" 
+                height="15" alt="bell" style="display: inline-block; margin-right: 1rem;">
+                <p style="font-weight: bold; display: inline; margin-right: 1rem;">GOOGL</p>
+                <p style="display: inline-block;">  Alphabet reached $2,950 over the last 5 hours</p>
+            </div>
+    
+            <div id="alert-walmart" style="padding-left: 2rem; padding-right: 2rem">
+                <img id="walmart" src="images/walmart.png" width="15" 
+                height="15" alt="bell" style="display: inline-block; margin-right: 1rem;">
+                <p style="font-weight: bold; display: inline; margin-right: 1rem;">WMT</p>
+                <p style="display: inline-block;">  Walmart experienced a 1.25% decrease</p>
+            </div>     
+          </div>
+        </div> 
+        </div>
+    
+        <!-- tesla alert -->
+    
+    
+        <div id="alerts-page-tesla" style="margin-top: -320px; padding: 30px;" class="hidden">
+            <hr/>
+            <div id="alert-tesla" style="padding-left: 2px; text-align:left;padding-right: 6px; padding-top: 4px; padding-bottom: 13px;">
+                <img id="tesla" src="images/tesla.png" width="15" 
+                height="15" alt="bell" style="display: inline-block; margin-right: 1rem;">
+                <p style="font-weight: bold; display: inline; margin-right: 1rem;">Tesla (TSLA)</p>
+    
+            </div>
+    
+            <div id="alert-sample" style="text-align: left;">
+                <p style="display: inline-block; font-weight: bold;">Price Alert for Mike 1</p><img id="home" src="images/rename.png" width="45" 
+                 alt="bell" style="margin-left:5px; display: inline-block;"> 
+                 <br>
+                 <span>Alert Type:</span>
+                 <form style="margin: 5px">
+                    <select name = "dropdown" style="padding: 4px; order: 1px solid black; border-radius: 10px; display: inline-block;width: 110px;">
+                    <option value = "taj" style="color: #6687FC;" selected>Price Target:</option>
+                    <option value = "china">Price Change:</option>
+                    <option value = "chirst">Volume Change:</option>
+                    </select>
+                </form>
+                <br>
+                    <span>Change by</span>
+                    <form style="margin: 5px">
+                        <input type="text" placeholder="-10" style="margin-right: 3px;">
+                        <select name = "dropdown" style="padding: 4px; order: 1px solid black; border-radius: 10px; display: inline-block;">
+                        <option value = "china" selected>Percentage</option>
+                        <option value = "chirst">USD</option>
+                        </select>
+                    </form>
+                    <span>in</span>
+                    <form style="display: inline-block; margin: 5px;">
+                        <input type="text" placeholder="12" style="margin-right: 3px;">
+                        <select name = "dropdown" style="padding: 4px; order: 1px solid black; border-radius: 10px; display: inline-block;">
+                        <option value = "china" selected>hours</option>
+                        <option value = "chirst">days</option>
+                        </select>
+                    </form>
+            </div>
+    
+        
+            <div>
+                <img id="plus-button" style="margin:auto; margin-top: 5px;" src="images/plus.png" alt="" width="30" height="30">
+            </div>
+        </div>
+    
+    
+        <!-- Apple alert -->
+    
+        <div id="alerts-page-apple" style="margin-top: -320px; padding: 30px;" class="hidden">
+            <hr/>
+            <div id="alert-tesla" style="padding-left: 2px; text-align:left;padding-right: 6px; padding-top: 4px; padding-bottom: 13px;">
+                <img id="tesla" src="images/apple.png" width="15" 
+                height="15" alt="bell" style="display: inline-block; margin-right: 1rem;">
+                <p style="font-weight: bold; display: inline; margin-right: 1rem;">Apple (APPL)</p>
+    
+            </div>
+    
+            <div id="alert-sample" style="text-align: left;">
+                <p style="display: inline-block; font-weight: bold;">Price Alert for Mike 1</p><img id="home" src="images/rename.png" width="45" 
+                 alt="bell" style="margin-left:5px; display: inline-block;"> 
+                 <br>
+                 <span>Alert Type:</span>
+                 <form style="margin: 5px">
+                    <select name = "dropdown" style="padding: 4px; order: 1px solid black; border-radius: 10px; display: inline-block;width: 110px;">
+                    <option value = "taj" style="color: #6687FC;" selected>Price Target:</option>
+                    <option value = "china">Price Change:</option>
+                    <option value = "chirst">Volume Change:</option>
+                    </select>
+                </form>
+                <br>
+                    <span>Change by</span>
+                    <form style="margin: 5px">
+                        <input type="text" placeholder="-10" style="margin-right: 3px;">
+                        <select name = "dropdown" style="padding: 4px; order: 1px solid black; border-radius: 10px; display: inline-block;">
+                        <option value = "china" selected>Percentage</option>
+                        <option value = "chirst">USD</option>
+                        </select>
+                    </form>
+                    <span>in</span>
+                    <form style="display: inline-block; margin: 5px;">
+                        <input type="text" placeholder="12" style="margin-right: 3px;">
+                        <select name = "dropdown" style="padding: 4px; order: 1px solid black; border-radius: 10px; display: inline-block;">
+                        <option value = "china" selected>hours</option>
+                        <option value = "chirst">days</option>
+                        </select>
+                    </form>
+            </div>
+    
+            <div>
+                <img id="plus-button" style="margin:auto; margin-top: 5px;" src="images/plus.png" alt="" width="30" height="30">
+            </div>
+        </div>
+    
+        <!-- google alert -->
+    
+            <div id="alerts-page-alphabet" style="margin-top: -320px; padding: 30px;" class="hidden">
+                <hr/>
+                <div id="alert-tesla" style="padding-left: 2px; text-align:left;padding-right: 6px; padding-top: 4px; padding-bottom: 13px;">
+                    <img id="tesla" src="images/google.png" width="15" 
+                    height="15" alt="bell" style="display: inline-block; margin-right: 1rem;">
+                    <p style="font-weight: bold; display: inline; margin-right: 1rem;">Alphabet (GOOGL)</p>
+        
+                </div>
+        
+                <div id="alert-sample" style="text-align: left;">
+                    <p style="display: inline-block; font-weight: bold;">Price Alert for Mike 1</p><img id="home" src="images/rename.png" width="45" 
+                     alt="bell" style="margin-left:5px; display: inline-block;"> 
+                     <br>
+                     <span>Alert Type:</span>
+                     <form style="margin: 5px">
+                        <select name = "dropdown" style="padding: 4px; order: 1px solid black; border-radius: 10px; display: inline-block;width: 110px;">
+                        <option value = "taj" style="color: #6687FC;" selected>Price Target:</option>
+                        <option value = "china">Price Change:</option>
+                        <option value = "chirst">Volume Change:</option>
+                        </select>
+                    </form>
+                    <br>
+                        <span>Change by</span>
+                        <form style="margin: 5px">
+                            <input type="text" placeholder="-10" style="margin-right: 3px;">
+                            <select name = "dropdown" style="padding: 4px; order: 1px solid black; border-radius: 10px; display: inline-block;">
+                            <option value = "china" selected>Percentage</option>
+                            <option value = "chirst">USD</option>
+                            </select>
+                        </form>
+                        <span>in</span>
+                        <form style="display: inline-block; margin: 5px;">
+                            <input type="text" placeholder="12" style="margin-right: 3px;">
+                            <select name = "dropdown" style="padding: 4px; order: 1px solid black; border-radius: 10px; display: inline-block;">
+                            <option value = "china" selected>hours</option>
+                            <option value = "chirst">days</option>
+                            </select>
+                        </form>
+                </div>
+        
+            
+                <div>
+                    <img id="plus-button" style="margin:auto; margin-top: 5px;" src="images/plus.png" alt="" width="30" height="30">
+                </div>
+            </div>
+        
+     
+        <!-- walmart alert -->
+    
+        <div id="alerts-page-walmart" style="margin-top: -320px; padding: 30px;" class="hidden">
+            <hr/>
+            <div id="alert-tesla" style="padding-left: 2px; text-align:left;padding-right: 6px; padding-top: 4px; padding-bottom: 13px;">
+                <img id="tesla" src="images/walmart.png" width="15" 
+                height="15" alt="bell" style="display: inline-block; margin-right: 1rem;">
+                <p style="font-weight: bold; display: inline; margin-right: 1rem;">Walmart (WMT)</p>
+    
+            </div>
+    
+            <div id="alert-sample" style="text-align: left;">
+                <p style="display: inline-block; font-weight: bold;">Price Alert for Mike 1</p><img id="home" src="images/rename.png" width="45" 
+                 alt="bell" style="margin-left:5px; display: inline-block;"> 
+                 <br>
+                 <span>Alert Type:</span>
+                 <form style="margin: 5px">
+                    <select name = "dropdown" style="padding: 4px; order: 1px solid black; border-radius: 10px; display: inline-block;width: 110px;">
+                    <option value = "taj" style="color: #6687FC;" selected>Price Target:</option>
+                    <option value = "china">Price Change:</option>
+                    <option value = "chirst">Volume Change:</option>
+                    </select>
+                </form>
+                <br>
+                    <span>Change by</span>
+                    <form style="margin: 5px">
+                        <input type="text" placeholder="-10" style="margin-right: 3px;">
+                        <select name = "dropdown" style="padding: 4px; order: 1px solid black; border-radius: 10px; display: inline-block;">
+                        <option value = "china" selected>Percentage</option>
+                        <option value = "chirst">USD</option>
+                        </select>
+                    </form>
+                    <span>in</span>
+                    <form style="display: inline-block; margin: 5px;">
+                        <input type="text" placeholder="12" style="margin-right: 3px;">
+                        <select name = "dropdown" style="padding: 4px; order: 1px solid black; border-radius: 10px; display: inline-block;">
+                        <option value = "china" selected>hours</option>
+                        <option value = "chirst">days</option>
+                        </select>
+                    </form>
+            </div>
+    
+        
+            <div>
+                <img id="plus-button" style="margin:auto; margin-top: 5px;" src="images/plus.png" alt="" width="30" height="30">
+            </div>
+        </div>
+    
     
   </body>
 </html>
