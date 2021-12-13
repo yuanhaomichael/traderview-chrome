@@ -115,7 +115,7 @@ body {
 
 #watchlist-headings {
     display: grid;
-    grid-template-columns: 20% 20% 20% 40%;
+    grid-template-columns: 35% 16% 22% 24%;
     padding: 0 5px;
 }
 
@@ -124,10 +124,33 @@ body {
     font-size: 16px;
 }
 
-#watchlist-row {
+.watchlist-row {
     display: grid;
-    grid-template-columns: 30% 25% 25% 10% 10%;
-    padding: 0 5px;
+    grid-template-columns: 30% 25% 15% 15% 15%;
+    margin: 5px 5px;
+}
+
+.icons-wl, .chart-wl{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.icons-wl > img {
+    margin: 0 5px;
+}
+
+.ticker-wl > p, .price-wl > p {
+    font-weight: bolder;
+    font-size: 18px;
+    margin: 0;
+}
+
+.change-wl > p {
+    font-weight: bolder;
+    font-size: 18px;
+    margin: 0;
+    color: #3EAF3F;
 }
 
 .header-item-left {
