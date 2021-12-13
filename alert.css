@@ -80,3 +80,15 @@ button.current {
 .hidden {
   display: none;
 }
+
+option {
+  color: #6687FC;
+}
+
+#alert-sample form {
+  display: inline-flex;
+}
+
+#alert-sample input{
+  width: 30px;
+}
