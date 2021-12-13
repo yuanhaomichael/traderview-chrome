@@ -251,7 +251,7 @@
                 </div>
             </div>
         </div>
-        <div id="watchlist-collapse" class="card-header grey-border" style="margin: 10px 0;">
+        <div id="watchlist-collapse-sleep" class="card-header grey-border" style="margin: 10px 0;">
             <div class="header-item-left">
                 <img id="watchlist-icon" src="images/watchlist.png" width="20" 
                 height="20" alt="logo">
@@ -262,6 +262,187 @@
                 height="20" alt="logo">
             </div>
         </div>
+    </div>
+
+    <div id="watchlist-view" class="hidden">
+        <div class="header">
+            <div class="header-item-left" >
+                <img id="watchlist-alert" src="images/alert.png" width="30" 
+                height="30" alt="logo">
+                <img id="sleep-icon" style="margin-left: 25px" src="images/sleep.png" width="35" 
+                height="35" alt="logo">
+            </div>
+            <div >
+                <img id="logo1" src="images/logo.png" width="55" 
+                height="40" alt="logo">
+                <h2 class="app-title" style="display: inline-block; margin-bottom: 0;">TraderView</h2>
+            </div>
+            <div class="header-item-right" >
+                <img id="settings" src="images/settings.png" width="30" 
+        height="30"  alt="logo">
+            </div>
+        </div>
+        <hr style="margin: 0"/>
+        <div id="summaries-collapse" class="card-header grey-border" style="margin: 5px 0;">
+            <div class="header-item-left">
+                <img id="watchlist-icon" src="images/portfolio-summary.png" width="20" 
+                height="20" alt="logo">
+                <h1 class="card-title">Portfolio Summaries</h1>
+            </div>
+            <div class="header-item-right">
+                <img id="side-icon" src="images/arrow-side.png" width="20" 
+                height="20" alt="logo">
+            </div>
+        </div>
+        <div id="watchlist" class="grey-border" style="margin-top:5px;">
+            <div class="card-header" style="padding-bottom: 0;">
+                <div class="header-item-left">
+                    <img id="summaries-icon" src="images/watchlist.png" width="20" 
+                    height="20" alt="logo">
+                    <h1 class="card-title">My Watchlist</h1>
+                    <img id="summaries-icon" src="images/plus.png" width="25" 
+                    height="25" alt="logo">
+                </div>
+                <div class="header-item-right">
+                    <img id="side-icon" src="images/arrow-down.png" width="20" 
+                    height="20" alt="logo">
+                </div>
+            </div>
+            <div id="watchlist-headings">
+                <span >Chart</span>
+                <span>Ticker Name</span>
+                <span>Price</span>
+                <span style="text-align: left;">Change(%)</span>
+            </div>
+            <hr style="color: #6687FC; background-color: #6687FC; border: none; height: 1px; margin-top: 2px">
+            <div class="watchlist-row">
+                <div class="char-wl">
+                    <img src="images/pinned.png" width=15% style="margin-bottom: 3px;">
+                    <img src="images/tsla-wl.png" width=75%>
+                </div>
+                <div class="ticker-wl">
+                    <p>Tesla</p>
+                    <p style="font-size: 13px;">(TSLA)</p>
+                </div>
+                <div class="price-wl">
+                    <p >$1,080.34</p>
+                </div>
+                <div class="change-wl">
+                    <p>+39.18</p>
+                    <p style="font-size: 13px; color: #3EAF3F">(+3.78%)</p>
+                </div>
+                <div class="icons-wl">
+                    <img src="images/edit-alert.png" width=20>
+                    <img src="images/trash.png" width=20>
+                </div>
+            </div>
+            <div class="watchlist-row">
+                <div class="char-wl">
+                    <img src="images/pinned.png" width=15% style="margin-bottom: 3px;">
+                    <img src="images/sprw-wl.png" width=75%>
+                </div>
+                <div class="ticker-wl">
+                    <p>Sun Power</p>
+                    <p style="font-size: 13px;">(SPRW)</p>
+                </div>
+                <div class="price-wl">
+                    <p >$32.40</p>
+                </div>
+                <div class="change-wl">
+                    <p>+1.39</p>
+                    <p style="font-size: 13px; color: #3EAF3F">(+4.47%)</p>
+                </div>
+                <div class="icons-wl">
+                    <img src="images/edit-alert.png" width=20>
+                    <img src="images/trash.png" width=20>
+                </div>
+            </div>
+            <div class="watchlist-row">
+                <div class="char-wl">
+                    <img src="images/pin.png" width=15% style="margin-bottom: 3px;">
+                    <img src="images/nio-wl.png" width=75%>
+                </div>
+                <div class="ticker-wl">
+                    <p>NIO Inc.</p>
+                    <p style="font-size: 13px;">(NIO)</p>
+                </div>
+                <div class="price-wl">
+                    <p >$40.92</p>
+                </div>
+                <div class="change-wl">
+                    <p>+1.48</p>
+                    <p style="font-size: 13px; color: #3EAF3F">(+3.76%)</p>
+                </div>
+                <div class="icons-wl">
+                    <img src="images/edit-alert.png" width=20>
+                    <img src="images/trash.png" width=20>
+                </div>
+            </div>
+            <div class="watchlist-row">
+                <div class="char-wl">
+                    <img src="images/pin.png" width=15% >
+                    <img src="images/s&p-wl.png" width=75%>
+                </div>
+                <div class="ticker-wl">
+                    <p>S&P 500</p>
+                    <p style="font-size: 13px;">(SPY)</p>
+                </div>
+                <div class="price-wl">
+                    <p >$457.00</p>
+                </div>
+                <div class="change-wl">
+                    <p>+4.38</p>
+                    <p style="font-size: 13px; color: #3EAF3F">(+0.96%)</p>
+                </div>
+                <div class="icons-wl">
+                    <img src="images/edit-alert.png" width=20>
+                    <img src="images/trash.png" width=20>
+                </div>
+            </div>
+            <div class="watchlist-row">
+                <div class="char-wl">
+                    <img src="images/pin.png" width=15% style="margin-bottom: 3px;">
+                    <img src="images/amd-wl.png" width=70%>
+                </div>
+                <div class="ticker-wl">
+                    <p>AMD</p>
+                    <p style="font-size: 13px;">(AMD)</p>
+                </div>
+                <div class="price-wl">
+                    <p >$120.69</p>
+                </div>
+                <div class="change-wl">
+                    <p style="color: #E14942">-1.12</p>
+                    <p style="font-size: 13px; color: #E14942">(-0.92%)</p>
+                </div>
+                <div class="icons-wl">
+                    <img src="images/edit-alert.png" width=20>
+                    <img src="images/trash.png" width=20>
+                </div>
+            </div>
+            <div class="watchlist-row">
+                <div class="char-wl">
+                    <img src="images/pin.png" width=15%>
+                    <img src="images/googl-wl.png" width=70%>
+                </div>
+                <div class="ticker-wl">
+                    <p>Alphabet</p>
+                    <p style="font-size: 13px;">(GOOGL)</p>
+                </div>
+                <div class="price-wl">
+                    <p >$2,419.37</p>
+                </div>
+                <div class="change-wl">
+                    <p style="color: #E14942">-7.37</p>
+                    <p style="font-size: 13px; color: #E14942">(-0.25%)</p>
+                </div>
+                <div class="icons-wl">
+                    <img src="images/edit-alert.png" width=20>
+                    <img src="images/trash.png" width=20>
+                </div>
+            </div>
+        </div>
+        
     </div>
     
   </body>

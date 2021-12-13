@@ -15,5 +15,15 @@ $(document).ready(function () {
         $("#portfolio-view").addClass("hidden");
     })
 
+    $("#watchlist-collapse-sleep").click(function() {
+        $("#portfolio-view-sleep").addClass("hidden");
+        $("#watchlist-view").removeClass("hidden");
+    })
+
+    $("#watchlist-alert").click(function() {
+        $("#watchlist-view").addClass("hidden");
+        // unhide whichever component you need
+    })
+
 
 });
