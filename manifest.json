@@ -9,7 +9,7 @@
   "permissions": ["storage", "activeTab", "scripting"],
   "action": {
 
-    "default_popup": "popup-mavis.html",
+    "default_popup": "popup.html",
 
     "default_icon": {
       "16": "/images/tr16.png",
