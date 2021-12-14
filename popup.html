@@ -65,13 +65,54 @@
         </div>
         <hr style="margin: 0"/>
         <div id="main-screen-verify">
-            <p >Enter the verification code sent to xxxx@gmail.com</p>
-            <input type="text" placeholder="7-digit code">
-            <div style="display:flex; justify-content: right; padding: 10px 0">
-                <button id="verify-button" class="blue-button"> Verify</button>
-            </div>
+            <p >Enter the password for xxxx@gmail.com</p>
+            <input id="pw" type="password" placeholder="password">
         </div>
         
+    </div>
+
+    <!-- Settings view -->
+    <div id="settings-view" class="hidden">
+        <div class="header">
+            <div class="header-item-left" >
+                <img id="settings-home" src="images/home.png" width="30" 
+                height="30" alt="logo">
+                <img id="moon" style="margin-left: 25px" src="images/not-sleep.png" width="30" 
+                height="30" alt="logo">
+            </div>
+            <div class="header-item">
+                <img id="logo1" src="images/logo.png" width="55" 
+                height="40" alt="logo">
+                <h2 class="app-title" style="display: inline-block; margin-bottom: 0;">TraderView</h2>
+            </div>
+            <div class="header-item-right" >
+                <img id="settings" src="images/settings.png" width="30" 
+        height="30"  alt="logo">
+            </div>
+        </div>
+        <hr style="margin: 0"/>
+        <h1 style="margin-bottom: 5px; margin-top: 0; padding: 0; font-weight: lighter; color: #6687FC;">Settings</h1>
+        <div id="settings-box" class="grey-border" style="margin: 10px 0;">
+            <div class="settings-entry">
+                <p>Account Preference</p>
+                <p>></p>
+            </div>
+            <div class="settings-entry">
+                <p>Edit Brokerage Links</p>
+                <p>></p>
+            </div>
+            <div class="settings-entry">
+                <p>Alert Preference</p>
+                <p>></p>
+            </div>
+            <div class="settings-entry">
+                <p>Reset Password</p>
+                <p>></p>
+            </div>
+        </div>
+        <div style="display:flex; justify-content: right; padding-bottom: 5px">
+            <button id="save-button" class="blue-button"> Save</button>
+        </div>
     </div>
 
     <!-- porfolio view -->
@@ -89,7 +130,7 @@
                 <h2 class="app-title" style="display: inline-block; margin-bottom: 0;">TraderView</h2>
             </div>
             <div class="header-item-right" >
-                <img id="settings" src="images/settings.png" width="30" 
+                <img id="portfolio-settings" src="images/settings.png" width="30" 
         height="30"  alt="logo">
             </div>
         </div>
@@ -287,7 +328,7 @@
                 <h2 class="app-title" style="display: inline-block; margin-bottom: 0;">TraderView</h2>
             </div>
             <div class="header-item-right" >
-                <img id="settings" src="images/settings.png" width="30" 
+                <img id="watchlist-settings" src="images/settings.png" width="30" 
         height="30"  alt="logo">
             </div>
         </div>

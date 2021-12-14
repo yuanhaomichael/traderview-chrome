@@ -5,8 +5,30 @@ $(document).ready(function () {
         $("#authentication-view").removeClass("hidden");
     })
 
-    $("#verify-button").click(function () {
-        $("#authentication-view").addClass("hidden");
+    $("#pw").keyup(function(event) {
+        if (event.keyCode === 13) {
+            $("#authentication-view").addClass("hidden");
+            $("#portfolio-view").removeClass("hidden");
+        }
+    });
+
+    $("#portfolio-settings").click(function () {
+        $("#settings-view").removeClass("hidden");
+        $("#portfolio-view").addClass("hidden");
+    })
+
+    $("#watchlist-settings").click(function () {
+        $("#settings-view").removeClass("hidden");
+        $("#watchlist-view").addClass("hidden");
+    })
+
+    $("#save-button").click(function() {
+        $("#settings-view").addClass("hidden");
+        $("#portfolio-view").removeClass("hidden");
+    })
+
+    $("#settings-home").click(function() {
+        $("#settings-view").addClass("hidden");
         $("#portfolio-view").removeClass("hidden");
     })
 
