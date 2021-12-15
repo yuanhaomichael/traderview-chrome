@@ -22,6 +22,11 @@ $(document).ready(function () {
         $("#watchlist-view").addClass("hidden");
     })
 
+    $("#dnd-settings").click(function () {
+        $("#settings-view").removeClass("hidden");
+        $("#portfolio-view-sleep").addClass("hidden");
+    })
+
     $("#save-button").click(function() {
         $("#settings-view").addClass("hidden");
         $("#portfolio-view").removeClass("hidden");
